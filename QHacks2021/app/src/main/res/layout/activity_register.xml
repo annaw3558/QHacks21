@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8CBFB3"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toStartOf="@+id/vacpass"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vacpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginRight="136dp"
+        android:text="VACPASS"
+        android:textColor="#185D62"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="56dp"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vacpass" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/enterNameText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/text_border"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textColor="#3F3F3F" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"/>
+        <EditText
+            android:id="@+id/enterEmailText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/text_border"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#3F3F3F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullNameTextView" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"/>
+
+        <EditText
+            android:id="@+id/enterBirthdateText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/text_border"
+            android:ems="10"
+            android:hint="Date of Birth"
+            android:inputType="date"
+            android:textColor="#3F3F3F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullNameTextView" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"/>
+        <EditText
+            android:id="@+id/enterHealthCardText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/text_border"
+            android:ems="10"
+            android:hint="Health Card Number"
+            android:inputType="number"
+            android:textColor="#3F3F3F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullNameTextView" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"/>
+
+        <EditText
+            android:id="@+id/enterPinText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/text_border"
+            android:ems="10"
+            android:hint="VACPASS PIN"
+            android:inputType="number"
+            android:textColor="#3F3F3F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullNameTextView" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background"
+        android:text="Register"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="If you do not have a VACPASS pin and\nhave been vaccinated, please contact your\nhealthcare provider to set up your VACPASS"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

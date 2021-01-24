@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".QrcodeActivity">
+
+
+    <LinearLayout
+        android:id="@+id/logoLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/vacpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="VACPASS"
+            android:textColor="#185D62"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My QR Code"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="24dp"/>
+    
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/qr"/>
+    <Button
+        android:id="@+id/returnHome"
+        android:layout_width="332dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_background"
+        android:text="Home"
+        android:onClick="ReturnHome"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"/>
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".HomeActivity">
+
+
+    <LinearLayout
+        android:id="@+id/logoLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/vacpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="VACPASS"
+            android:textColor="#185D62"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Vaccines"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="24dp"/>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="225dp"
+        android:background="@drawable/green_bubble"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:text="COVID-19 Pfizer and BioNTech"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Recived: 24-01-2021"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doses: 2/2"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: Vaccinated"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="18dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/showQR"
+        android:layout_width="332dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="26dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_background"
+        android:text="Show QR Code"
+        android:onClick="ShowQRCode"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp" />
+    <Button
+        android:id="@+id/addToWallet"
+        android:layout_width="332dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_background"
+        android:text="Add To Wallet"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="If there is an error in your information\nabove, plase contact your healthcare\nprovider immediatley."
+        android:layout_gravity="center"
+        android:layout_marginTop="21dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000FF"
+        android:text="FAQ"
+        android:textSize="16sp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:onClick="ShowFAQ"
+        android:clickable="true"/>
+
+
+</LinearLayout>
